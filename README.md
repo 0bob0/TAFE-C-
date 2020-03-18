@@ -16,7 +16,7 @@ Written by Brook Jeynes and Robert MacKenzie
 <li><a href="#second-project">Data Types, variables and sequence</a></li>
 <ul>
     <li><a href="#datatypes">Data types</a></li>
-    <li><a href="#typeconvertion">Type conversion</a></li>
+    <li><a href="#typeconversion">Type conversion</a></li>
     <li><a href="#variables">Variables</a></li>
     <li><a href="#operators">Operators</a></li>
     <li><a href="#sequence">Sequence</a></li>
@@ -26,9 +26,9 @@ Written by Brook Jeynes and Robert MacKenzie
   </ul>
 <li><a href="#third-project">Decisions</a></li>
 <ul>
-    <li><a href="#datatypes">if</a></li>
-    <li><a href="#typeconvertion">If Else</a></li>
-    <li><a href="#variables">Switch</a></li>
+    <li><a href="#if">if</a></li>
+    <li><a href="#ifelse">If Else</a></li>
+    <li><a href="#switch">Switch</a></li>
     <li><a href="#project3">TASK - Project 3</a></li>
   </ul>
 <li><a href="#fourth-project">Loops</a></li>
@@ -328,14 +328,15 @@ Once you have finished the above program you are ready to move onto the next sec
 <h1 id="second-project">Data Types, variables and sequence</h1>
 In this section you will learn to
 <ul>
-    <li><id ="#datatypes">Data types</a></li>
-    <li><id ="#typeconvertion">Type conversion</a></li>
-    <li><id ="#variables">Variables</a></li>
-    <li><id ="#operators">Operators</a></li>
-    <li><id ="#sequence">Sequence</a></li>
-    <li><id ="#comments">Comments</a></li>
-    <li><id ="#PseudoCode">Pseudo Code</a></li>
+    <li id ="#datatypes">Data types</li>
+    <li id ="#typeconversion">Type conversion</li>
+    <li id ="#variables">Variables</li>
+    <li id ="#operators">Operators</li>
+    <li id ="#sequence">Sequence</li>
+    <li id ="#comments">Comments</li>
+    <li id ="#PseudoCode">Pseudo Code</li>
   </ul>
+
 
 <br>
 <h2>Variables</h2>
