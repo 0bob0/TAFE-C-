@@ -328,15 +328,14 @@ Once you have finished the above program you are ready to move onto the next sec
 <h1 id="second-project">Data Types, variables and sequence</h1>
 In this section you will learn to
 <ul>
-    <li id ="#datatypes">Data types</li>
-    <li id ="#typeconversion">Type conversion</li>
-    <li id ="#variables">Variables</li>
-    <li id ="#operators">Operators</li>
-    <li id ="#sequence">Sequence</li>
-    <li id ="#comments">Comments</li>
-    <li id ="#PseudoCode">Pseudo Code</li>
+    <li>Data types</li>
+    <li>Type conversion</li>
+    <li>Variables</li>
+    <li>Operators</li>
+    <li>Sequence</li>
+    <li>Comments</li>
+    <li>Pseudo Code</li>
   </ul>
-
 
 <br>
 <h2>Variables</h2>
