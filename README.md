@@ -26,7 +26,7 @@ Written by Brook Jeynes and Robert MacKenzie
   </ul>
 <li><a href="#third-project">Decisions</a></li>
 <ul>
-    <li><a href="#datatypes">IF</a></li>
+    <li><a href="#datatypes">if</a></li>
     <li><a href="#typeconvertion">If Else</a></li>
     <li><a href="#variables">Switch</a></li>
     <li><a href="#project3">TASK - Project 3</a></li>
