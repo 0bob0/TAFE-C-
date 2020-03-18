@@ -325,15 +325,18 @@ Once you have finished the above program you are ready to move onto the next sec
 
 <hr> <br>
 
-<h1 id="second-project">Variables, Data Types and Math</h1>
+<h1 id="second-project">Data Types, variables and sequence</h1>
 In this section you will learn to
 <ul>
-  <li>Create Variables</li>
-  <li>Take User Input</li>
-  <li>Do Math in C#</li>
-  <li>If else</li>
-  <li>Data Type Casting</li>
-</ul>
+    <li><id ="#datatypes">Data types</a></li>
+    <li><id ="#typeconvertion">Type conversion</a></li>
+    <li><id ="#variables">Variables</a></li>
+    <li><id ="#operators">Operators</a></li>
+    <li><id ="#sequence">Sequence</a></li>
+    <li><id ="#comments">Comments</a></li>
+    <li><id ="#PseudoCode">Pseudo Code</a></li>
+  </ul>
+
 <br>
 <h2>Variables</h2>
 Variables are declarations which allow you to store a certain value to a certain name. Variables can hold many types of data but that data type should always be declared when creating it.
