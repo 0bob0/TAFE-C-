@@ -658,7 +658,9 @@ Comapre your solution with other students' answers to see if there are better wa
 
 <h2>Loops</h2>
 <h3>While</h3>
-![while](https://user-images.githubusercontent.com/33891852/77504632-9dda9680-6eac-11ea-98e2-da2c64006c3d.PNG)
+<br>
+<img src="https://user-images.githubusercontent.com/33891852/77504632-9dda9680-6eac-11ea-98e2-da2c64006c3d.PNG"/>
+<br>
 <h3>Do While</h3>
 <h3>For</h3>
 <h3>ForEach</h3>
