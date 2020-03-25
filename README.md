@@ -492,6 +492,11 @@ This is what's called an `if else` statement, it does pretty much what it sounds
 <h3>If</h3>
 <h3>If Else</h3>
 <h3>Switch</h3>
+<h3>Recap</h3>
+<ul>
+  <li>decisions provide branches for your data flow</li>
+  <li>If this is ture then do code</li>
+  <li>if... else - if this is true then do this code else do this code</li></ul>
 
 
 <h2>Loops</h2>
@@ -499,6 +504,11 @@ This is what's called an `if else` statement, it does pretty much what it sounds
 <h3>Do While</h3>
 <h3>For</h3>
 <h3>ForEach</h3>
+<h3>Recap</h3>
+<ul>
+  <li>loops provide recuring tasks to be performed - go through your data to extract something</li>
+  <li>types: while - do while, for, foreach</li>
+</ul>
 
 
 
@@ -506,19 +516,30 @@ This is what's called an `if else` statement, it does pretty much what it sounds
 <h3>One dimension</h3>
 <h3>Extra functions</h3>
 <h3>Multi Dimension</h3>
-
+<h3>Recap</h3>
+<ul>
+  <li>arrays hold multiple buckets of data - accessed by refgerencing the elemnet number of the array</li>
+  <li>can have 1 line arrays (like a string) 2 dimensions - even arrays of arrays (makes my head hurt thinking of these)</li>
+</ul>
 
 
 <h2>Working with files</h2>
 <h3>read text from a file</h3>
 <h3>Write text to a file</h3>
+<h3>Recap</h3>
+<ul>
+  <li>the ability to store data for retrieval later is handy</li>
+  <li>be careful where you write this data to - can get lost</li>
+</ul>
 
 
 <h2>Methods</h2>
 <h3>What are they</h3>
 <h3>Examples</h3>
-
-
+<ul>
+  <li>Methods (or Functions) are a good way to start dividing your code up</li>
+  <li>Each method should have 1 function - i.e. add 2 numbers together - it will make your code easier to read, t'shoot and manage later on when your programs become a lot bigger</li>
+</ul>
 
 
 
