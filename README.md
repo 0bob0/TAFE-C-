@@ -354,11 +354,13 @@ In this small piece of code we declare that the variable `bobAge` is an integer 
 <br>
 Here is a short list of the most common variable types
 <ul>
-  <li>Int: Stores integers (whole numbers), without decimals, such as 123 or -123</li>
-  <li>Double: Stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
-  <li>Char: Stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
-  <li>String: Stores text, such as "Hello World". String values are surrounded by double quotes</li>
-  <li>Bool: Stores values with two states: true or false</li>
+  <li>int: 4 Bytes : Stores whole numbers from -2,147,483,648 to 2,147,483,647</li>
+  <li>long: 8 Bytes: Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</li>
+  <li>float: 4 Bytes: Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</li>
+  <li>double: 8 Bytes:  Stores fractional numbers. Sufficient for storing 15 decimal digits</li>
+  <li>Bool: 1 bit: Stores values with two states: true or false</li>
+  <li>Char: 2 Bytes: Stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+  <li>String: 2 Bytes per character: Stores text, such as "Hello World". String values are surrounded by double quotes</li>
 </ul>
 <hr>
 <br>
@@ -369,6 +371,16 @@ Here is an example of a program that uses users input, try read through the code
 <br><br>
 
 ```csharp
+/*
+ * c# program - check wheteher the number entered is odd or even
+*/
+
+// pseudo code
+// user enters a number
+//if the value is even print out "even number"
+//if the value is odd print out "odd number"
+//end program
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -466,7 +478,7 @@ This is what's called an `if else` statement, it does pretty much what it sounds
 
 <br>
 
-<h3>Recap<h3>
+<h3>Recap</h3>
 
 <ul>
   <li>Console.Write(); / Console.WriteLine(); || Functions that output text to the terminal window</li>
@@ -475,6 +487,40 @@ This is what's called an `if else` statement, it does pretty much what it sounds
   <li>% || Allows you to check if a number is divisible by another without remainders</li>
   <li>int.Parse(); || Allows you to convert a data type to an integer</li>
 </ul>
+
+<h2>Decisions</h2>
+<h3>If</h3>
+<h3>If Else</h3>
+<h3>Switch</h3>
+
+
+<h2>Loops</h2>
+<h3>While</h3>
+<h3>Do While</h3>
+<h3>For</h3>
+<h3>ForEach</h3>
+
+
+
+<h2>Arrays</h2>
+<h3>One dimension</h3>
+<h3>Extra functions</h3>
+<h3>Multi Dimension</h3>
+
+
+
+<h2>Working with files</h2>
+<h3>read text from a file</h3>
+<h3>Write text to a file</h3>
+
+
+<h2>Methods</h2>
+<h3>What are they</h3>
+<h3>Examples</h3>
+
+
+
+
 
 <br><br>
 
@@ -485,6 +531,9 @@ This is what's called an `if else` statement, it does pretty much what it sounds
   <li><a href="https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners?l=Lvld4EQIC_2706218949">C# Fundamentals for Absolute Beginners</a></li>
   <li><a href="https://www.csharp-examples.net/">C# Code Examples</a></li>
   <li><a href="https://www.codeproject.com/KB/cs/">C# Project Examples</a></li>
+<li><a href="https://www.w3resource.com/csharp-exercises/">Online with sample exercises with flowcharts and solutions </a>
+</li>
+
 </ul>
 
 <h2>Namespaces</h2>
