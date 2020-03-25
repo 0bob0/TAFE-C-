@@ -489,18 +489,176 @@ This is what's called an `if else` statement, it does pretty much what it sounds
 </ul>
 
 <h2>Decisions</h2>
+<p>C# provides many decision making statements that help the flow of the C# program based on certain logical conditions. C# includes the following decision making statements.</p>
+<ul>
+<li>if statement</li>
+<li>if-else statement</li>
+<li>if-elseif-else statement</li>
+<li>switch statement</li>
+
 <h3>If</h3>
+
+if(boolean expression == true or false)
+{
+    // execute all this code if expression evalutes to true
+}
+
+```csharp
+if(true)
+{
+    Console.WriteLine("This will be displayed.");
+}
+Console.ReadLine();
+```
+
+
+or you can have multiple if statements
+
+```csharp
+int i = 10, j = 20;
+
+if (i > j)
+{
+    Console.WriteLine("i is greater than j");
+}
+
+if (i < j)
+{
+    Console.WriteLine("i is less than j");
+}        
+
+if (i == j)
+{
+    Console.WriteLine("i is equal to j");
+}   
+```
+
+
 <h3>If Else</h3>
+
+if(boolean expression == true or false)
+{
+    // execute all this code if expression evalutes to true
+}
+else
+{
+    // execute all this code if expression evalutes to false
+}
+
+
+```csharp
+int i = 10, j = 20;
+
+if (i > j)
+{
+    Console.WriteLine("i is greater than j");
+}
+else
+{
+    Console.WriteLine("i is either equal to or less than j");
+}
+```
+
+
+<h3>If elseif else</h3>
+
+TASK - write pseudo code for the following program - also add comments to the code 
+```csharp
+using System;
+
+namespace Game1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("find the number");
+            Console.Write("choose a number: 1, 2 or 3: ");
+            string userValue = Console.ReadLine();
+            if (userValue == "1") 
+            {
+                string message = "you won a lot of stuff!"; 
+                Console.WriteLine(message);
+            }
+            else if (userValue == "2")
+            {
+                string message = "you won a bit of stuff!"; 
+                Console.WriteLine(message);
+            }
+            else if (userValue == "3")
+            {
+                string message = "you won some stuff! - but not much"; 
+                Console.WriteLine(message);
+            }
+            else             {
+                string message = "you cannot read! - try again...... sigh";
+                Console.WriteLine(message);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+```
+
+
 <h3>Switch</h3>
+statements – use them if you have a range of known inputs that require a particular output. Or you don’t want to write down a massive list of If else statements.
+NOte - to get out of a Case we need to 'break' this allows the program to flow into the next section (after the switch)
+
+```csharp
+int day = 4;
+switch (day) 
+{
+  case 1:
+    Console.WriteLine("Monday");
+    break;
+  case 2:
+    Console.WriteLine("Tuesday");
+    break;
+  case 3:
+    Console.WriteLine("Wednesday");
+    break;
+  case 4:
+    Console.WriteLine("Thursday");
+    break;
+  case 5:
+    Console.WriteLine("Friday");
+    break;
+  case 6:
+    Console.WriteLine("Saturday");
+    break;
+  case 7:
+    Console.WriteLine("Sunday");
+    break;
+}
+```
+
 <h3>Recap</h3>
 <ul>
   <li>decisions provide branches for your data flow</li>
-  <li>If this is ture then do code</li>
-  <li>if... else - if this is true then do this code else do this code</li></ul>
+  <li>If this is true then do the code block</li>
+  <li>if... else - if this is true then do this code else do the other code code</li>
+<li>switch statement - define certain cases which can be tested for a match - when matched do the code block then exit the switch</li>
+</ul>
 
+<h3>TASK - Project 2</H3>
+<hr> <br>
+Create a small program (using decisions) to achieve the following
+A Teacher is to enter a grade and write a standard output for the student.
+<ul>
+<li>Grade < 50%  Fail  can try harder</li>
+<li>Grade 51-60%  Pass  works hard</li>
+<li>Grade 61-75%  Pass  Quiet achiever</li>
+<li>Grade 76-90%  Pass  Unexpected result a joy to behold</li>
+<li>Grade 91-100%  Fail  an obvious cheat no evidence of intellect shown previously</li>
+</ul>
+
+Comapre your solution with other students' answers to see if there are better ways to produce your program
+<hr> <br>
 
 <h2>Loops</h2>
 <h3>While</h3>
+![while](https://user-images.githubusercontent.com/33891852/77504632-9dda9680-6eac-11ea-98e2-da2c64006c3d.PNG)
 <h3>Do While</h3>
 <h3>For</h3>
 <h3>ForEach</h3>
@@ -509,6 +667,13 @@ This is what's called an `if else` statement, it does pretty much what it sounds
   <li>loops provide recuring tasks to be performed - go through your data to extract something</li>
   <li>types: while - do while, for, foreach</li>
 </ul>
+
+<h3>TASK - Project 3</H3>
+<hr> <br>
+Create a small program 
+Comapre your solution with other students' answers to see if there are better ways to produce your program
+<hr> <br>
+
 
 
 
@@ -521,6 +686,11 @@ This is what's called an `if else` statement, it does pretty much what it sounds
   <li>arrays hold multiple buckets of data - accessed by refgerencing the elemnet number of the array</li>
   <li>can have 1 line arrays (like a string) 2 dimensions - even arrays of arrays (makes my head hurt thinking of these)</li>
 </ul>
+<h3>TASK - Project 4</H3>
+<hr> <br>
+Create a small program 
+Comapre your solution with other students' answers to see if there are better ways to produce your program
+<hr> <br>
 
 
 <h2>Working with files</h2>
@@ -531,6 +701,11 @@ This is what's called an `if else` statement, it does pretty much what it sounds
   <li>the ability to store data for retrieval later is handy</li>
   <li>be careful where you write this data to - can get lost</li>
 </ul>
+<h3>TASK - Project 5</H3>
+<hr> <br>
+Create a small program 
+Comapre your solution with other students' answers to see if there are better ways to produce your program
+<hr> <br>
 
 
 <h2>Methods</h2>
@@ -540,6 +715,11 @@ This is what's called an `if else` statement, it does pretty much what it sounds
   <li>Methods (or Functions) are a good way to start dividing your code up</li>
   <li>Each method should have 1 function - i.e. add 2 numbers together - it will make your code easier to read, t'shoot and manage later on when your programs become a lot bigger</li>
 </ul>
+<h3>TASK - Project 6</H3>
+<hr> <br>
+Create a small program 
+Comapre your solution with other students' answers to see if there are better ways to produce your program
+<hr> <br>
 
 
 
