@@ -466,10 +466,10 @@ So now the number the user enters is assigned to `i` what are we going to do wit
       else {
         Console.Write("Entered Number is an Odd Number");
         Console.Read();
-      }
-    }
-  }
-}
+			}
+		}
+		}
+	}
 ```
 
 <br>
@@ -603,7 +603,7 @@ namespace Game1
 
 <h3>Switch</h3>
 statements – use them if you have a range of known inputs that require a particular output. Or you don’t want to write down a massive list of If else statements.
-NOte - to get out of a Case we need to 'break' this allows the program to flow into the next section (after the switch)
+Note - to get out of a Case we need to 'break' this allows the program to flow into the next section (after the switch)
 
 ```csharp
 int day = 4;
@@ -661,6 +661,7 @@ Compare your solution with other students' answers to see if there are better wa
 <br>
 <img src="https://user-images.githubusercontent.com/33891852/77504632-9dda9680-6eac-11ea-98e2-da2c64006c3d.PNG"/>
 <br>
+
 ```csharp
 int i = 0;
 
@@ -683,6 +684,7 @@ while (i < 2)
 <br>
 <img src="https://user-images.githubusercontent.com/33891852/79522178-5e176100-809e-11ea-8ca8-bdf3c40dd58f.PNG"/>
 <br>
+
 ```csharp
 	int i = 0;
 
@@ -704,6 +706,7 @@ while (i < 2)
 <br>
 <img src="https://user-images.githubusercontent.com/33891852/79521876-99fdf680-809d-11ea-9caa-19d0461cdf42.PNG"/>
 <br>
+
 ```csharp
 	using System;
 
@@ -735,6 +738,7 @@ while (i < 2)
 ```
 
 <h3>ForEach</h3>
+
 ```csharp
 	public class Foreach
 		{
