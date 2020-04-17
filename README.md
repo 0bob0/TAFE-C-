@@ -807,6 +807,7 @@ Compare your solution with other students' answers to see if there are better wa
 	}
 ```
 <h3>Extra functions</h3>
+
 ```csharp
 	using System;
 
@@ -856,6 +857,7 @@ Compare your solution with other students' answers to see if there are better wa
 <br>
 <img src="https://user-images.githubusercontent.com/33891852/79523088-b6e7f900-80a0-11ea-81e6-ea625160f218.png"/>
 <br>
+
 ```csharp
 	int[,] arr2d = new int[3,2]{ 
                                 {1, 2}, 
@@ -886,6 +888,7 @@ Compare your solution with other students' answers to see if there are better wa
 
 <h2>Working with files</h2>
 <h3>read and write text to and from a file stored locally</h3>
+
 ```csharp
 	using System;
 	using System.IO;  // include the System.IO namespace
@@ -944,6 +947,7 @@ Compare your solution with other students' answers to see if there are better wa
 <h2>Methods</h2>
 <h3>What are they</h3>
 <h3>Examples</h3>
+
 ```csharp
   hello
 ```
