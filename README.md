@@ -885,48 +885,47 @@ Compare your solution with other students' answers to see if there are better wa
 <h2>Working with files</h2>
 <h3>read and write text to and from a file stored locally</h3>
 ```csharp
- using System;
-using System.IO;  // include the System.IO namespace
+	using System;
+	using System.IO;  // include the System.IO namespace
 
-namespace Files
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            string writeText = "Hello World!";  // Create a text string
-            File.WriteAllText(@"f:\file1.txt", writeText);  // Create a file and write the content of writeText to it
+	namespace Files
+		{
+			class Program
+			{
+				static void Main(string[] args)
+				{
+				string writeText = "Hello World!";  // Create a text string
+				File.WriteAllText(@"f:\file1.txt", writeText);  // Create a file and write the content of writeText to it
 
-            string readText = File.ReadAllText(@"f:\file1.txt");  // Read the contents of the file
-            Console.WriteLine(readText);  // Output the content
+				string readText = File.ReadAllText(@"f:\file1.txt");  // Read the contents of the file
+				Console.WriteLine(readText);  // Output the content
 
             // Example #2: Write one string to a text file.
-            string text = "A class is the most powerful data type in C#. Like a structure, " +
+				string text = "A class is the most powerful data type in C#. Like a structure, " +
                            "a class defines the data and behavior of the data type. ";
             // WriteAllText creates a file, writes the specified string to the file,
             // and then closes the file.    You do NOT need to call Flush() or Close().
-            File.WriteAllText(@"f:\file2.txt", text);
+				File.WriteAllText(@"f:\file2.txt", text);
 
-            string readText2 = File.ReadAllText(@"f:\file2.txt");  // Read the contents of the file
-            Console.WriteLine(readText2);  // Output the content
+				string readText2 = File.ReadAllText(@"f:\file2.txt");  // Read the contents of the file
+				Console.WriteLine(readText2);  // Output the content
 
             // Create a string array with the lines of text
-        string[] lines = { "First line", "Second line", "Third line" };
+				string[] lines = { "First line", "Second line", "Third line" };
 
             // Set a variable to the Documents path.
-            string docPath =
-              Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+				string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
             // Write the string array to a new file named "WriteLines.txt".
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
-            {
+				using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
+					{
                 foreach (string line in lines)
                     outputFile.WriteLine(line);
-            }
+					}
 
-        }
-    }
-}
+				}
+			}
+		}
 ```
 
 <h3>Recap</h3>
@@ -940,12 +939,11 @@ Create a small program
 Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
-
 <h2>Methods</h2>
 <h3>What are they</h3>
 <h3>Examples</h3>
 ```csharp
- 
+  hello
 ```
 <ul>
   <li>Methods (or Functions) are a good way to start dividing your code up</li>
