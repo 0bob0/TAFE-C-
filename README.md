@@ -26,39 +26,39 @@ Written by Brook Jeynes and Robert MacKenzie
   </ul>
 <li><a href="#third-project">Decisions</a></li>
 <ul>
-    <li><a href="#if">if</a></li>
-    <li><a href="#ifelse">If Else</a></li>
-    <li><a href="#switch">Switch</a></li>
-    <li><a href="#project3">TASK - Project 3</a></li>
+    <li>if</li>
+    <li>If Else</li>
+    <li>Switch</li>
+    <li>TASK - Project 3</li>
   </ul>
 <li><a href="#fourth-project">Loops</a></li>
 <ul>
-    <li><a href="#While">While</a></li>
-    <li><a href="#doWhile">Do while</a></li>
-    <li><a href="#for">For</a></li>
-    <li><a href="#foreach">ForEach</a></li>
-    <li><a href="#project4">TASK - Project 4</a></li>
+    <li>While</li>
+    <li>Do while</li>
+    <li>For</li>
+    <li>ForEach</li>
+    <li>TASK - Project 4</li>
   </ul>
 
 <li><a href="#fifth-project">Arrays</a></li>
 <ul>
-    <li><a href="#oneDimension">One Dimension</a></li>
-    <li><a href="#extrafunction">extra function</a></li>
-    <li><a href="#multiDimension">Multi Dimension</a></li>
-    <li><a href="#project5">TASK - Project 5</a></li>
+    <li>One Dimension</li>
+    <li>extra function</li>
+    <li>Multi Dimension</li>
+    <li>TASK - Project 5</li>
   </ul>
 
 <li><a href="#sixth-project">File Reading and Writing</a></li>
 <ul>
-    <li><a href="#readFile">Read a text file</a></li>
-    <li><a href="#writeFile">Write a text file</a></li>
-    <li><a href="#project6">TASK - Project 6</a></li>
+    <li>Read a text file</li>
+    <li>Write a text file</li>
+    <li>TASK - Project 6</li>
   </ul>
 <li><a href="#seventh-project">Methods - functions</a></li>
 <ul>
-    <li><a href="#Methods">What is it</a></li>
-    <li><a href="#exmethod">example methods</a></li>
-    <li><a href="#project7">TASK - Project 7</a></li>
+    <li>What is it</li>
+    <li>example methods</li>
+    <li>TASK - Project 7</li>
   </ul>
 
 <li><a href="#resources-content">Resources</a></li>
@@ -335,7 +335,7 @@ In this section you will learn to
     <li>Sequence</li>
     <li>Comments</li>
     <li>Pseudo Code</li>
-  </ul>
+</ul>
 
 <br>
 <h2>Variables</h2>
@@ -488,7 +488,7 @@ This is what's called an `if else` statement, it does pretty much what it sounds
   <li>int.Parse(); || Allows you to convert a data type to an integer</li>
 </ul>
 
-<h2>Decisions</h2>
+<h2 id="third-project">Decisions</h2>
 <p>C# provides many decision making statements that help the flow of the C# program based on certain logical conditions. C# includes the following decision making statements.</p>
 <ul>
 <li>if statement</li>
@@ -602,7 +602,7 @@ namespace Game1
 
 
 <h3>Switch</h3>
-statements – use them if you have a range of known inputs that require a particular output. Or you don’t want to write down a massive list of If else statements.
+Statements – use them if you have a range of known inputs that require a particular output. Or you don’t want to write down a massive list of If else statements.
 Note - to get out of a Case we need to 'break' this allows the program to flow into the next section (after the switch)
 
 ```csharp
@@ -656,7 +656,7 @@ A Teacher is to enter a grade and write a standard output for the student.
 Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
-<h2>Loops</h2>
+<h2 id="fourth-project">Loops</h2>
 <h3>While</h3>
 <br>
 <img src="https://user-images.githubusercontent.com/33891852/77504632-9dda9680-6eac-11ea-98e2-da2c64006c3d.PNG"/>
@@ -776,7 +776,7 @@ Compare your solution with other students' answers to see if there are better wa
 
 
 
-<h2>Arrays</h2>
+<h2 id="fifth-project">Arrays</h2>
 <h3>One dimension</h3>
 <br>
 <img src="https://user-images.githubusercontent.com/33891852/79522348-cc5c2380-809e-11ea-8da3-b2eeb0f36215.png"/>
@@ -886,7 +886,7 @@ Compare your solution with other students' answers to see if there are better wa
 <hr> <br>
 
 
-<h2>Working with files</h2>
+<h2 id="sixth-project">Working with files</h2>
 <h3>read and write text to and from a file stored locally</h3>
 
 ```csharp
@@ -944,7 +944,7 @@ Create a small program
 Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
-<h2>Methods</h2>
+<h2 id="seventh-project">Methods</h2>
 <h3>What are they</h3>
 <h3>Examples</h3>
 
