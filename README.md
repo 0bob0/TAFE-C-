@@ -684,22 +684,20 @@ while (i < 2)
 <img src="https://user-images.githubusercontent.com/33891852/79522178-5e176100-809e-11ea-8ca8-bdf3c40dd58f.PNG"/>
 <br>
 ```csharp
-int i = 0;
+	int i = 0;
 
-do
-{
-    Console.WriteLine("Value of i: {0}", i);
-    int j = i;
-
-    i++;
-                
+	do
+		{
+		Console.WriteLine("Value of i: {0}", i);
+		int j = i;
+		i++;     
     do
-    {
+		{
         Console.WriteLine("Value of j: {0}", j);
         j++;
-    } while (j < 2);
+		} while (j < 2);
 
-} while (i < 2);
+	} while (i < 2);
 ```
 
 <h3>For - or iteration</h3>
@@ -707,57 +705,57 @@ do
 <img src="https://user-images.githubusercontent.com/33891852/79521876-99fdf680-809d-11ea-9caa-19d0461cdf42.PNG"/>
 <br>
 ```csharp
-using System;
+	using System;
 
-namespace Itteration1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            for (int i = 0; i < 10; i++) //loop through while == True
-            {
-                //Console.WriteLine(i);
-                if (i == 7)
-                {
-                    continue;
-                }
+	namespace Itteration1
+		{
+		class Program
+		{
+			static void Main(string[] args)
+			{
+				for (int i = 0; i < 10; i++) //loop through while == True
+					{
+					//Console.WriteLine(i);
+					if (i == 7)
+					{
+						continue;
+					}
                 Console.WriteLine("Found the number 7");
                 break;
             }
 
             for (int i = 0; i < 12; i++)
-            {
+				{
                 Console.WriteLine(i);
-            }
+				}
             Console.ReadLine();
-        }
-    }
-}
+			}
+		}
+	}
 ```
 
 <h3>ForEach</h3>
 ```csharp
-public class Foreach
-{
-    public static void Main()
-    {
-		// Span is a way of managing memory in .net 
-        Span<int> storage = stackalloc int[10];
-        int num = 0;
-        foreach (ref int item in storage)
-        {
-            item = num++;
-        }
+	public class Foreach
+		{
+			public static void Main()
+			{
+				// Span is a way of managing memory in .net 
+				Span<int> storage = stackalloc int[10];
+				int num = 0;
+				foreach (ref int item in storage)
+				{
+					item = num++;
+				}
 
-        foreach (ref readonly var item in storage)
-        {
-            Console.Write($"{item} ");
-        }
-        // Output:
-        // 0 1 2 3 4 5 6 7 8 9
-    }
-}
+				foreach (ref readonly var item in storage)
+				{
+					Console.Write($"{item} ");
+				}
+				// Output:
+				// 0 1 2 3 4 5 6 7 8 9
+			}
+		}
 ```
 <h3>Recap</h3>
 <ul>
@@ -781,74 +779,74 @@ Compare your solution with other students' answers to see if there are better wa
 <br>
 
 ```csharp
- using System;
+	using System;
 
-namespace Array_1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int[] numbers = new int[5];
+	namespace Array_1
+	{
+		class Program
+		{
+			static void Main(string[] args)
+			{
+				int[] numbers = new int[5];
 
-            numbers[0] = 4;
-            numbers[1] = 5;
-            numbers[2] = 15;
-            numbers[3] = 16;
-            numbers[4] = 23;
+				numbers[0] = 4;
+				numbers[1] = 5;
+				numbers[2] = 15;
+				numbers[3] = 16;
+				numbers[4] = 23;
 
-            Console.WriteLine(numbers[2]); //access third element
-            Console.WriteLine(numbers.Length); //how many elements in the array
-            Console.ReadLine(); // pause - wait for key input
-        }
-    }
-}
+				Console.WriteLine(numbers[2]); //access third element
+				Console.WriteLine(numbers.Length); //how many elements in the array
+				Console.ReadLine(); // pause - wait for key input
+			}
+		}
+	}
 ```
 <h3>Extra functions</h3>
 ```csharp
- using System;
+	using System;
 
-namespace Array_2
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            int[] numbers = new int[] { 4, 8, 15, 16, 23, 42 }; //array length defined by number of elements in {}
-            Console.WriteLine(numbers[2]);
-            Console.ReadLine();
+	namespace Array_2
+	{
+		class Program
+		{
+			static void Main(string[] args)
+			{
+				int[] numbers = new int[] { 4, 8, 15, 16, 23, 42 }; //array length defined by number of elements in {}
+				Console.WriteLine(numbers[2]);
+				Console.ReadLine();
 
-            string[] words = new string[] {"bob", "stan", "bill"};
-            for (int i = 0; i < words.Length; i++)
-            {
-                Console.WriteLine(words[i]);
+				string[] words = new string[] {"bob", "stan", "bill"};
+				for (int i = 0; i < words.Length; i++)
+				{
+					Console.WriteLine(words[i]);
 
-            }
-            Console.ReadLine();
-            
-            words[1] = "fred";
-            Console.WriteLine(words[1]);
-            Console.ReadLine();
+				}
+				Console.ReadLine();
+				
+				words[1] = "fred";
+				Console.WriteLine(words[1]);
+				Console.ReadLine();
 
-            foreach (string name in words)
-            {
-                Console.WriteLine(name);
-            }
-            Console.ReadLine();
+				foreach (string name in words)
+				{
+					Console.WriteLine(name);
+				}
+				Console.ReadLine();
 
-            //reverse the string
-            string str = "if you have something to do - do it";
-            char[] charArray = str.ToCharArray();
-            Array.Reverse(charArray);
+				//reverse the string
+				string str = "if you have something to do - do it";
+				char[] charArray = str.ToCharArray();
+				Array.Reverse(charArray);
 
-            foreach (char char1 in charArray)
-            {
-                Console.Write(char1);
-            }
-            Console.ReadLine();
-        }
-    }
-}
+				foreach (char char1 in charArray)
+				{
+					Console.Write(char1);
+				}
+				Console.ReadLine();
+			}
+		}
+	}
 ```
 <h3>Multi Dimension - in this case a 2 dimensional array</h3>
 <br>
