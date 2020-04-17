@@ -653,7 +653,7 @@ A Teacher is to enter a grade and write a standard output for the student.
 <li>Grade 91-100%  Fail  an obvious cheat no evidence of intellect shown previously</li>
 </ul>
 
-Comapre your solution with other students' answers to see if there are better ways to produce your program
+Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
 <h2>Loops</h2>
@@ -661,9 +661,104 @@ Comapre your solution with other students' answers to see if there are better wa
 <br>
 <img src="https://user-images.githubusercontent.com/33891852/77504632-9dda9680-6eac-11ea-98e2-da2c64006c3d.PNG"/>
 <br>
+```csharp
+int i = 0;
+
+while (i < 2)
+{
+    Console.WriteLine("Value of i: {0}", i);
+    int j = 1;
+
+    i++;
+
+    while (j < 2)
+    {
+        Console.WriteLine("Value of j: {0}", j);
+        j++;
+    }
+}
+```
+
 <h3>Do While</h3>
-<h3>For</h3>
+<br>
+<img src="https://user-images.githubusercontent.com/33891852/79522178-5e176100-809e-11ea-8ca8-bdf3c40dd58f.PNG"/>
+<br>
+```csharp
+int i = 0;
+
+do
+{
+    Console.WriteLine("Value of i: {0}", i);
+    int j = i;
+
+    i++;
+                
+    do
+    {
+        Console.WriteLine("Value of j: {0}", j);
+        j++;
+    } while (j < 2);
+
+} while (i < 2);
+```
+
+<h3>For - or iteration</h3>
+<br>
+<img src="https://user-images.githubusercontent.com/33891852/79521876-99fdf680-809d-11ea-9caa-19d0461cdf42.PNG"/>
+<br>
+```csharp
+using System;
+
+namespace Itteration1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 0; i < 10; i++) //loop through while == True
+            {
+                //Console.WriteLine(i);
+                if (i == 7)
+                {
+                    continue;
+                }
+                Console.WriteLine("Found the number 7");
+                break;
+            }
+
+            for (int i = 0; i < 12; i++)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+```
+
 <h3>ForEach</h3>
+```csharp
+public class Foreach
+{
+    public static void Main()
+    {
+		// Span is a way of managing memory in .net 
+        Span<int> storage = stackalloc int[10];
+        int num = 0;
+        foreach (ref int item in storage)
+        {
+            item = num++;
+        }
+
+        foreach (ref readonly var item in storage)
+        {
+            Console.Write($"{item} ");
+        }
+        // Output:
+        // 0 1 2 3 4 5 6 7 8 9
+    }
+}
+```
 <h3>Recap</h3>
 <ul>
   <li>loops provide recuring tasks to be performed - go through your data to extract something</li>
@@ -673,7 +768,7 @@ Comapre your solution with other students' answers to see if there are better wa
 <h3>TASK - Project 3</H3>
 <hr> <br>
 Create a small program 
-Comapre your solution with other students' answers to see if there are better ways to produce your program
+Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
 
@@ -681,9 +776,101 @@ Comapre your solution with other students' answers to see if there are better wa
 
 <h2>Arrays</h2>
 <h3>One dimension</h3>
+<br>
+<img src="https://user-images.githubusercontent.com/33891852/79522348-cc5c2380-809e-11ea-8da3-b2eeb0f36215.png"/>
+<br>
+
+```csharp
+ using System;
+
+namespace Array_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = new int[5];
+
+            numbers[0] = 4;
+            numbers[1] = 5;
+            numbers[2] = 15;
+            numbers[3] = 16;
+            numbers[4] = 23;
+
+            Console.WriteLine(numbers[2]); //access third element
+            Console.WriteLine(numbers.Length); //how many elements in the array
+            Console.ReadLine(); // pause - wait for key input
+        }
+    }
+}
+```
 <h3>Extra functions</h3>
-<h3>Multi Dimension</h3>
+```csharp
+ using System;
+
+namespace Array_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = new int[] { 4, 8, 15, 16, 23, 42 }; //array length defined by number of elements in {}
+            Console.WriteLine(numbers[2]);
+            Console.ReadLine();
+
+            string[] words = new string[] {"bob", "stan", "bill"};
+            for (int i = 0; i < words.Length; i++)
+            {
+                Console.WriteLine(words[i]);
+
+            }
+            Console.ReadLine();
+            
+            words[1] = "fred";
+            Console.WriteLine(words[1]);
+            Console.ReadLine();
+
+            foreach (string name in words)
+            {
+                Console.WriteLine(name);
+            }
+            Console.ReadLine();
+
+            //reverse the string
+            string str = "if you have something to do - do it";
+            char[] charArray = str.ToCharArray();
+            Array.Reverse(charArray);
+
+            foreach (char char1 in charArray)
+            {
+                Console.Write(char1);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+```
+<h3>Multi Dimension - in this case a 2 dimensional array</h3>
+<br>
+<img src="https://user-images.githubusercontent.com/33891852/79523088-b6e7f900-80a0-11ea-81e6-ea625160f218.png"/>
+<br>
+```csharp
+	int[,] arr2d = new int[3,2]{ 
+                                {1, 2}, 
+                                {3, 4}, 
+                                {5, 6} 
+                            };
+
+	arr2d[0, 0]; //returns 1
+	arr2d[0, 1]; //returns 2
+	arr2d[1, 0]; //returns 3
+	arr2d[1, 1]; //returns 4
+	arr2d[2, 0]; //returns 5
+	arr2d[2, 1]; //returns 6
+	//arr2d[3, 0]; //throws run-time error as there is no 4th row
+```
 <h3>Recap</h3>
+For multidimensional arrays - the first number used in the declaration of the array equates to the number of rows, the second number equates to the number of columns
 <ul>
   <li>arrays hold multiple buckets of data - accessed by refgerencing the elemnet number of the array</li>
   <li>can have 1 line arrays (like a string) 2 dimensions - even arrays of arrays (makes my head hurt thinking of these)</li>
@@ -691,13 +878,57 @@ Comapre your solution with other students' answers to see if there are better wa
 <h3>TASK - Project 4</H3>
 <hr> <br>
 Create a small program 
-Comapre your solution with other students' answers to see if there are better ways to produce your program
+Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
 
 <h2>Working with files</h2>
-<h3>read text from a file</h3>
-<h3>Write text to a file</h3>
+<h3>read and write text to and from a file stored locally</h3>
+```csharp
+ using System;
+using System.IO;  // include the System.IO namespace
+
+namespace Files
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string writeText = "Hello World!";  // Create a text string
+            File.WriteAllText(@"f:\file1.txt", writeText);  // Create a file and write the content of writeText to it
+
+            string readText = File.ReadAllText(@"f:\file1.txt");  // Read the contents of the file
+            Console.WriteLine(readText);  // Output the content
+
+            // Example #2: Write one string to a text file.
+            string text = "A class is the most powerful data type in C#. Like a structure, " +
+                           "a class defines the data and behavior of the data type. ";
+            // WriteAllText creates a file, writes the specified string to the file,
+            // and then closes the file.    You do NOT need to call Flush() or Close().
+            File.WriteAllText(@"f:\file2.txt", text);
+
+            string readText2 = File.ReadAllText(@"f:\file2.txt");  // Read the contents of the file
+            Console.WriteLine(readText2);  // Output the content
+
+            // Create a string array with the lines of text
+        string[] lines = { "First line", "Second line", "Third line" };
+
+            // Set a variable to the Documents path.
+            string docPath =
+              Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            // Write the string array to a new file named "WriteLines.txt".
+            using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
+            {
+                foreach (string line in lines)
+                    outputFile.WriteLine(line);
+            }
+
+        }
+    }
+}
+```
+
 <h3>Recap</h3>
 <ul>
   <li>the ability to store data for retrieval later is handy</li>
@@ -706,21 +937,24 @@ Comapre your solution with other students' answers to see if there are better wa
 <h3>TASK - Project 5</H3>
 <hr> <br>
 Create a small program 
-Comapre your solution with other students' answers to see if there are better ways to produce your program
+Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
 
 <h2>Methods</h2>
 <h3>What are they</h3>
 <h3>Examples</h3>
+```csharp
+ 
+```
 <ul>
   <li>Methods (or Functions) are a good way to start dividing your code up</li>
   <li>Each method should have 1 function - i.e. add 2 numbers together - it will make your code easier to read, t'shoot and manage later on when your programs become a lot bigger</li>
 </ul>
 <h3>TASK - Project 6</H3>
 <hr> <br>
-Create a small program 
-Comapre your solution with other students' answers to see if there are better ways to produce your program
+Create a small program that uses a function or 2
+Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
 
