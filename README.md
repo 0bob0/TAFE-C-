@@ -809,7 +809,7 @@ while (i < 2)
 <hr> <br>
 Create small programs:
 Write pseudo code to design these programs.
-1-A junior magician has picked a secret number. He has hidden it in a variable named secret_number. 
+<br>1-A junior magician has picked a secret number. He has hidden it in a variable named secret_number. 
 He wants everyone who run his program to play the Guess the secret number game, 
 and guess what number he has picked for them. Those who don't guess the number will be stuck in an endless loop forever! 
 Unfortunately, he does not know how to complete the code.
@@ -823,7 +823,7 @@ Your task is to help the magician complete the code in the editor in such a way 
 
 The magician is counting on you! Don't disappoint him.
 
-2- Develop a program using the for function that prints the word "Mississipi" each second for 10 seconds.
+<br>2- Develop a program using the for function that prints the word "Mississipi" each second for 10 seconds.
 you will need to investigate C# functions to find something that delays the output.
 expected output - 10 x Mississipi words printed on a new line, program takes 10 seconds to complete.
 
@@ -1019,6 +1019,7 @@ Compare your solution with other students' answers to see if there are better wa
 <h3>What are they</h3>
 A method is a group of statements that together perform a task - we can call them from elsewhere in the program to do the task (function) required.
 <h3>Examples</h3>
+
 ```csharp
 class class_name
 {
@@ -1032,6 +1033,7 @@ class class_name
     ...
 }
 ```
+
 Where:
 <ul>
   <li>Access_Specifier - It is used to define an access level either public or private, etc. to allow other classes to access the method. If we didn’t mention any access modifier, then by default it is private.</li>
