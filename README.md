@@ -643,15 +643,52 @@ switch (day)
 
 <h3>TASK - Project 2</H3>
 <hr> <br>
-Create a small program (using decisions) to achieve the following
-A Teacher is to enter a grade and write a standard output for the student.
-<ul>
-<li>Grade < 50%  Fail  can try harder</li>
-<li>Grade 51-60%  Pass  works hard</li>
-<li>Grade 61-75%  Pass  Quiet achiever</li>
-<li>Grade 76-90%  Pass  Unexpected result a joy to behold</li>
-<li>Grade 91-100%  Fail  an obvious cheat no evidence of intellect shown previously</li>
-</ul>
+Build these programs:
+Write pseudo code to design this program.
+Create 2 small program (using decisions) to achieve the following:
+1- 
+A user enters 3 numbers, create an efficient code that sorts and prints out the highest number entered. (use if statements not 'FindMaxax')
+If you feel like it - add in some error checking:
+if 2 numbers are the same and the highest then what to do? 
+If negative numbers are used but you wanted to check for positive numbers only?
+think of other "errors" and what would you do about it?
+
+2-As you surely know, due to some astronomical reasons, years may be leap or common. The former are 366 days long, while the latter are 365 days long.
+
+Since the introduction of the Gregorian calendar (in 1582), the following rule is used to determine the kind of year:
+
+if the year number isn't divisible by four, it's a common year;
+otherwise, if the year number isn't divisible by 100, it's a leap year;
+otherwise, if the year number isn't divisible by 400, it's a common year;
+otherwise, it's a leap year.
+Look at the code in the editor - it only reads a year number, and needs to be completed with the instructions implementing the test we've just described.
+
+The code should output one of two possible messages, which are Leap year or Common year, depending on the value entered.
+
+It would be good to verify if the entered year falls into the Gregorian era, and output a warning otherwise: Not within the Gregorian calendar period. Tip: use the != and % operators.
+
+Test your code using the data we've provided.
+
+Test Data
+Sample input: 2000
+
+Expected output: Leap year
+
+Sample input: 2015
+
+Expected output: Common year
+
+Sample input: 1999
+
+Expected output: Common year
+
+Sample input: 1996
+
+Expected output: Leap year
+
+Sample input: 1580
+
+Expected output: Not within the Gregorian calendar period
 
 Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
@@ -702,7 +739,7 @@ while (i < 2)
 	} while (i < 2);
 ```
 
-<h3>For - or iteration</h3>
+<h3>For - iteration</h3>
 <br>
 <img src="https://user-images.githubusercontent.com/33891852/79521876-99fdf680-809d-11ea-9caa-19d0461cdf42.PNG"/>
 <br>
@@ -769,12 +806,29 @@ while (i < 2)
 
 <h3>TASK - Project 3</H3>
 <hr> <br>
-Create a small program 
-Compare your solution with other students' answers to see if there are better ways to produce your program
+Create small programs:
+Write pseudo code to design these programs.
+1-A junior magician has picked a secret number. He has hidden it in a variable named secret_number. 
+He wants everyone who run his program to play the Guess the secret number game, 
+and guess what number he has picked for them. Those who don't guess the number will be stuck in an endless loop forever! 
+Unfortunately, he does not know how to complete the code.
+
+Your task is to help the magician complete the code in the editor in such a way so that the code:
+<ul>
+  <li>will ask the user to enter an integer number;</li>
+  <li>will use a while loop;</li>
+  <li>will check whether the number entered by the user is the same as the number picked by the magician. If the number chosen by the user is different than the magician's secret number, the user should see the message "Ha ha! You're stuck in my loop!" and be prompted to enter a number again. If the number entered by the user matches the number picked by the magician, the number should be printed to the screen, and the magician should say the following words: "Well done, You are free now."</li>
+</ul>
+
+The magician is counting on you! Don't disappoint him.
+
+2- Develop a program using the for function that prints the word "Mississipi" each second for 10 seconds.
+you will need to investigate C# functions to find something that delays the output.
+expected output - 10 x Mississipi words printed on a new line, program takes 10 seconds to complete.
+
+Compare your solutions with other students' answers to see if there are better ways to produce your program
+
 <hr> <br>
-
-
-
 
 <h2 id="fifth-project">Arrays</h2>
 <h3>One dimension</h3>
@@ -882,6 +936,19 @@ For multidimensional arrays - the first number used in the declaration of the ar
 <h3>TASK - Project 4</H3>
 <hr> <br>
 Create a small program 
+Write pseudo code to design this program.
+
+There once was a hat. The hat contained no rabbit, but a list of five numbers: 1, 2, 3, 4, and 5.
+
+Your task is to:
+<ul>
+  <li>Create the Array with the values given</li>
+  <li>write a line of code that prompts the user to replace the middle number in the list with an integer number entered by the user</li>
+  <li>write a line of code that removes the last element from the list</li>
+  <li>write a line of code that prints the length of the existing list</li>
+  <li>write a line of code that prints the 2nd value of the existing list</li>
+</ul>
+Add any error checking required
 Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
@@ -941,26 +1008,71 @@ Compare your solution with other students' answers to see if there are better wa
 <h3>TASK - Project 5</H3>
 <hr> <br>
 Create a small program 
+Write pseudo code to design this program.
+
+
 Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
 
 <h2 id="seventh-project">Methods</h2>
 <h3>What are they</h3>
+A method is a group of statements that together perform a task - we can call them from elsewhere in the program to do the task (function) required.
 <h3>Examples</h3>
-
 ```csharp
-  hello
+class class_name
+{
+    ...
+    ...
+    <Access_Specifier> <Return_Type> Method_Name(<Parameters>)
+    {
+        // Statements to Execute
+    }
+    ...
+    ...
+}
 ```
+Where:
+<ul>
+  <li>Access_Specifier - It is used to define an access level either public or private, etc. to allow other classes to access the method. If we didn’t mention any access modifier, then by default it is private.</li>
+  <li>Return_Type - It is used to specify the type of value the method can return. In case, if the method is not returning any value, then we need to mention void as return type.</li>
+  <li>Method_Name - It must be a unique name to identify the method in a class. </li>
+  <li>Parameters - The method parameters are useful to send or receive data from a method and these method parameters are enclosed within parentheses and are separated by commas. In case, if no parameters are required for a method then, we need to define a method with empty parentheses.</li>
+</ul>
+ 
+ 
+```csharp
+class NumberManipulator {
+   public int FindMax(int num1, int num2) {
+      /* local variable declaration */
+      int result;	
+      if (num1 > num2) {
+         result = num1;
+      }else {
+         result = num2;
+      }
+      return result;
+   }
+   ...
+}
+```
+
+
+
 <ul>
   <li>Methods (or Functions) are a good way to start dividing your code up</li>
   <li>Each method should have 1 function - i.e. add 2 numbers together - it will make your code easier to read, t'shoot and manage later on when your programs become a lot bigger</li>
 </ul>
 <h3>TASK - Project 6</H3>
 <hr> <br>
-Create a small program that uses a function or 2
+Create a small program that calls a couple of methods.
+Write pseudo code to design this program.
+Our client wants to print out a box on screen - the box boundaries are "|" and "-"
+The user enters a number of squares they want.
+The program prints out a Square - so if the user enters '10' then a 10x10 box.
+To capture errors ensure the user can only enter positive integers between 1 to 30. 
+
 Compare your solution with other students' answers to see if there are better ways to produce your program
 <hr> <br>
-
 
 
 <br><br>
