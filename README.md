@@ -6,23 +6,23 @@ Written by Brook Jeynes and Robert MacKenzie
 <ul>
   <li><a href="#first-project">First Project - getting started</a></li>
   <ul>
-    <li><a href="#creating-first-project">Creating your first project</a></li>
-    <li><a href="#namespaces">Namespaces</a></li>
-    <li><a href="#classes">Classes intro</a></li>
-    <li><a href="#methods">Methods intro</a></li>
-    <li><a href="#printing">Printing to the command line</a></li>
-    <li><a href="#project1">Project 1</a></li>
+    <li>Creating your first project</li>
+    <li>Namespaces</li>
+    <li>Classes intro</li>
+    <li>Methods intro</li>
+    <li>Printing to the command line</li>
+    <li>Project 1></li>
   </ul>
 <li><a href="#second-project">Data Types, variables and sequence</a></li>
 <ul>
-    <li><a href="#datatypes">Data types</a></li>
-    <li><a href="#typeconversion">Type conversion</a></li>
-    <li><a href="#variables">Variables</a></li>
-    <li><a href="#operators">Operators</a></li>
-    <li><a href="#sequence">Sequence</a></li>
-    <li><a href="#comments">Comments</a></li>
-    <li><a href="#PseudoCode">Pseudo Code</a></li>
-    <li><a href="#project2">TASK - Project 2</a></li>
+    <li>Data types</li>
+    <li>Type conversion</li>
+    <li><Variables</li>
+    <li>Operators</li>
+    <li>Sequence</li>
+    <li>Comments</li>
+    <li>Pseudo Code</li>
+    <li>TASK - Project 2</li>
   </ul>
 <li><a href="#third-project">Decisions</a></li>
 <ul>
@@ -160,7 +160,7 @@ This first line of code is called a `Namespace`. A Namespace is an element in C#
 
 So what is the `System` namespace and what does it include? <br>
 
-> "The System namespace contains fundamental classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and processing exceptions." - <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/namespaces/">A Guide to Namespaces</a>
+<a> "The System namespace contains fundamental classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and processing exceptions." - <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/namespaces/">A Guide to Namespaces</a>
 
 <br>
 
@@ -326,7 +326,7 @@ Once you have finished the above program you are ready to move onto the next sec
 <hr> <br>
 
 <h1 id="second-project">Data Types, variables and sequence</h1>
-In this section you will learn to
+In this section you will be introduced to
 <ul>
     <li>Data types</li>
     <li>Type conversion</li>
@@ -428,6 +428,8 @@ using System.Text;
 Here we import a variety of things which allow use certain functions. All these functions are taken from the `System` import, thats why we use `System.nameofpackage`.
 
 <br>
+
+<hr> <br>
 
 <h3>Variables and User Input</h3>
 
@@ -558,7 +560,7 @@ else
     Console.WriteLine("i is either equal to or less than j");
 }
 ```
-
+<hr> <br>
 
 <h3>If elseif else</h3>
 
@@ -643,17 +645,16 @@ switch (day)
 
 <h3>TASK - Project 2</H3>
 <hr> <br>
-Build these programs:
-Write pseudo code to design this program.
+<br>Build these programs:
+<br>Write pseudo code to design this program.
 Create 2 small program (using decisions) to achieve the following:
-1- 
-A user enters 3 numbers, create an efficient code that sorts and prints out the highest number entered. (use if statements not 'FindMaxax')
+<br>1- A user enters 3 numbers, create an efficient code that sorts and prints out the highest number entered. (use if statements not 'FindMaxax')
 If you feel like it - add in some error checking:
 if 2 numbers are the same and the highest then what to do? 
 If negative numbers are used but you wanted to check for positive numbers only?
 think of other "errors" and what would you do about it?
 
-2-As you surely know, due to some astronomical reasons, years may be leap or common. The former are 366 days long, while the latter are 365 days long.
+<br>2-As you surely know, due to some astronomical reasons, years may be leap or common. The former are 366 days long, while the latter are 365 days long.
 
 Since the introduction of the Gregorian calendar (in 1582), the following rule is used to determine the kind of year:
 
