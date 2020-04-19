@@ -68,10 +68,10 @@ Written by Brook Jeynes and Robert MacKenzie
 
 <h1>Getting Started</h1>
 <h2>The IDE</h2>
-We'll start off by installing <a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio</a> however, feel free to use any IDE you feel comfortable with. It's important to know your way around the IDE of use so make sure to read documentation and at least know the basics of it.
+Well start off by installing <a href="https://visualstudio.microsoft.com/vs/community/">Visual Studio</a> however, feel free to use any IDE you feel comfortable with. Its important to know your way around the IDE of use so make sure to read documentation and at least know the basics of it.
 <br>
 <h2>Resources</h2>
-This tutorial follows on from these online recources and gives some practice examples to complete to test your progress, it's not required but recommended you at least check out these <a href="#resources-content">resources</a> for a better understand of basics
+This tutorial follows on from these online recources and gives some practice examples to complete to test your progress, its not required but recommended you at least check out these <a href="#resources-content">resources</a> for a better understand of basics
 
 <h6 style="font-size:11px;"><i>*note: Many examples found in this document are taken and modified from various sites. A complete resource list can be found <a href="#resources-content">here</a></i></h6>
 
@@ -116,7 +116,7 @@ For this example project we will create a new folder with the name "Hello World 
 
 <br>
 
-Now it's time to create a `C# console app` and call it `main.cs`. Once created open it up in visual studio, or your IDE of choice, and make sure that you can connect to that project through the IDE editor. Now you have set everything up, write out the example code below. Try think about what it does before running it. <br><br>
+Now its time to create a `C# console app` and call it `main.cs`. Once created open it up in visual studio, or your IDE of choice, and make sure that you can connect to that project through the IDE editor. Now you have set everything up, write out the example code below. Try think about what it does before running it. <br><br>
 
 ```csharp
 using System;
@@ -144,7 +144,7 @@ namespace HelloWorld
 
 So what does this program actually do? This application will output the phrase "Hello World!" into the commandline. This project is the starting point of every programmers langauge learning journey. Lets now delve into what each line in this program does for a better understanding of C#. 
 <br><br>
-It's important to note that the topics discussed below will be later discussed in more detail, this is just a simple overview as so you get a basic idea of C# and to not overload your brain with information.
+Its important to note that the topics discussed below will be later discussed in more detail, this is just a simple overview as so you get a basic idea of C# and to not overload your brain with information.
 
 <br>
 
@@ -203,8 +203,8 @@ Here we create a `class` and label it `Program`. A class is a <br>
 
 <br>
 
-It's essentially a user-defined blueprint which the interpretor uses to create an `Object`. 
-In that quote you saw the phrase `Object-Oriented Programming` and `Object`, don't worry about these terms just yet because they will be discussed later. {add link to where they are discussed}
+Its essentially a user-defined blueprint which the interpretor uses to create an `Object`. 
+In that quote you saw the phrase `Object-Oriented Programming` and `Object`, dont worry about these terms just yet because they will be discussed later. {add link to where they are discussed}
 
 <h6 style="font-size:11px;"><i>*note: for more information on OOP, Objects and Classes check out these resources
   <ul>
@@ -228,7 +228,7 @@ static void Main(string[] args) {
 
 This is what we call a `Method`. A method is similar to a `Function` in other programming languages. The `Main` method is called in the above code. The main method is the first method (function) to be called when initially running the program. This means that nearly all the code you write will be inside the `Main()` method. 
 
-For now we won't talk about what `static void` and `(string[] args)` means just yet, they will be discussed later however, if you want to read about them now some links to more information will be located just below.
+For now we wont talk about what `static void` and `(string[] args)` means just yet, they will be discussed later however, if you want to read about them now some links to more information will be located just below.
 
 <h6 style="font-size:11px;"><i>*note: It is important to note that throughout this document `method` and `function` are interchangeably used, they both mean the same thing. a method is a function and a function is a method</i></h6>
 
@@ -249,9 +249,9 @@ Console.WriteLine("Hello World!");
 
 <br>
 
-Finally onto the last line of this small program, if any of these concepts haven't made much sense don't worry too much as they will be covered later in the document. This was just a small rundown on basic concepts from a beginner application for people who don't have very much knowledge on C#. It is recommended however that further research into misunderstood topics to be done as all the example applications will build upon these basic concepts with the addition of more concepts.
+Finally onto the last line of this small program, if any of these concepts havent made much sense dont worry too much as they will be covered later in the document. This was just a small rundown on basic concepts from a beginner application for people who dont have very much knowledge on C#. It is recommended however that further research into misunderstood topics to be done as all the example applications will build upon these basic concepts with the addition of more concepts.
 
-In this line we have a couple things to talk about and we'll start with `Console.`. What is this? This is actually a `namespace`, remember from above how we used a namespace by importing it? (`using System;`). Here we use the namespace `Console` but you may be thinking, why didn't we import it? dont we have to import it to use it? Well, kind of. 
+In this line we have a couple things to talk about and well start with `Console.`. What is this? This is actually a `namespace`, remember from above how we used a namespace by importing it? (`using System;`). Here we use the namespace `Console` but you may be thinking, why didnt we import it? dont we have to import it to use it? Well, kind of. 
 
 If we imported it the application would look like this instead: <br><br>
 
@@ -270,9 +270,9 @@ using Console;
 
 <br>
 
-If we import `Console` we can use any function inside of the namespace without needing to declare it. `WriteLine` is a function inside the `Console` namespace however, because we didn't reference (import) it at the start of the application we declared it as we used the functuion. Thats why in the line `Console.WriteLine(...);` we declare it.
+If we import `Console` we can use any function inside of the namespace without needing to declare it. `WriteLine` is a function inside the `Console` namespace however, because we didnt reference (import) it at the start of the application we declared it as we used the functuion. Thats why in the line `Console.WriteLine(...);` we declare it.
 
-So we've now declared the `Console.` namespace, what does the `WriteLine();` function do? It does exactly what it looks like it does, it prints out to the command line whatever is inside the function (inside the () brackets). 
+So weve now declared the `Console.` namespace, what does the `WriteLine();` function do? It does exactly what it looks like it does, it prints out to the command line whatever is inside the function (inside the () brackets). 
 
 We will talk about data types in the next section of this document but as of currently just remember:
 <ul>
@@ -280,7 +280,7 @@ We will talk about data types in the next section of this document but as of cur
     A `String` is a series of characters and are declared by surrounding them in quotation marks (single '' or double "" work the same way). Example: "This is a string", "A string can include numbers aswell, 1 or 4 or maybe even 7"
   </li>
   <li>   
-    An int (short for integer) is a series of numbers and are <b>not</b> contained in quotation marks, these are numbers that don't include decimal points
+    An int (short for integer) is a series of numbers and are <b>not</b> contained in quotation marks, these are numbers that dont include decimal points
   </li>
 </ul>
 
@@ -295,7 +295,7 @@ We will talk about data types in the next section of this document but as of cur
 <br>
 
 <h1 id="project1">main.cs: A Project About Structuring Your Programs</h1>
-Now that you've learnt the structure of a C# program it's your time to have a go at creating one. Throughout this document there will be examples and mini projects for you to test your knowledge and to allow a hands on learning experience. <br>
+Now that youve learnt the structure of a C# program its your time to have a go at creating one. Throughout this document there will be examples and mini projects for you to test your knowledge and to allow a hands on learning experience. <br>
 
 The goal of this project is to, using the .cs file we just created, code a program which outputs the text `"C# is fun"` to the command line. Goodluck.
 
@@ -349,7 +349,7 @@ string bobAddress = "200 Old Man Street"
 
 <br>
 
-In this small piece of code we declare that the variable `bobAge` is an integer and that it contains the value `100`. Now whenever we want to reference the value 100 instead we can reference "bobAge". The same is done with `bobAddress`, we decalre it as a string and assign it the value `"200 Old Man Street"`. So why is this useful? Why not just reference "100" or "200 Old Man Street". Well what if we want a value to change but have it in the same section of a function? We can't just change the code everytime we want a value to change. By assigning it a name we can reference that variable in the code and assign it a new value whenever.
+In this small piece of code we declare that the variable `bobAge` is an integer and that it contains the value `100`. Now whenever we want to reference the value 100 instead we can reference "bobAge". The same is done with `bobAddress`, we decalre it as a string and assign it the value `"200 Old Man Street"`. So why is this useful? Why not just reference "100" or "200 Old Man Street". Well what if we want a value to change but have it in the same section of a function? We cant just change the code everytime we want a value to change. By assigning it a name we can reference that variable in the code and assign it a new value whenever.
 
 <br>
 Here is a short list of the most common variable types
@@ -412,7 +412,7 @@ namespace check1
 
 <br>
 
-Now that you've run the code you would have seen that the program allows you to determine whether a value is odd or even. Let's do a quick run down of how this program works. 
+Now that youve run the code you would have seen that the program allows you to determine whether a value is odd or even. Lets do a quick run down of how this program works. 
 
 <h3>Imports</h3>
 
@@ -447,7 +447,7 @@ Here we import a variety of things which allow use certain functions. All these 
 
 <br>
 
-Here we see that we start off by declaring the variable `i` as an `integer`, however we dont assign it a value just yet. In the next line we use a new function called `Console.Write();`, what does this do? It's the same as `Console.WriteLine();` however instead of outputting the text on a serparate line it creates it on the current line. This will make more sense when you compare the two in action. `i = int.Parse(Console.ReadLine());` is essentially 2 lines of code combined into 1 single line, the first bit being `int.Parse();` and the second being `Console.ReadLine();`. `Console.ReadLine();` allows the user to type into the terminal window and by assigning the function a value allows you to take what the user writes and assign it to that said variable. (eg, `i = Console.ReadLine();`). The other part of the code takes what the user inputs and turns it into an integer, by default anything a user enters is counted as a string. So in order to do any math with it we must first convert it to an integer, this is done by the `int.Parse()` function. So by incorperating both these functions into a single line of code `i = int.Parse(Console.ReadLine));` we take the users intput, turn it into a string, and assign it to the variable `i`. 
+Here we see that we start off by declaring the variable `i` as an `integer`, however we dont assign it a value just yet. In the next line we use a new function called `Console.Write();`, what does this do? Its the same as `Console.WriteLine();` however instead of outputting the text on a serparate line it creates it on the current line. This will make more sense when you compare the two in action. `i = int.Parse(Console.ReadLine());` is essentially 2 lines of code combined into 1 single line, the first bit being `int.Parse();` and the second being `Console.ReadLine();`. `Console.ReadLine();` allows the user to type into the terminal window and by assigning the function a value allows you to take what the user writes and assign it to that said variable. (eg, `i = Console.ReadLine();`). The other part of the code takes what the user inputs and turns it into an integer, by default anything a user enters is counted as a string. So in order to do any math with it we must first convert it to an integer, this is done by the `int.Parse()` function. So by incorperating both these functions into a single line of code `i = int.Parse(Console.ReadLine));` we take the users intput, turn it into a string, and assign it to the variable `i`. 
 
 <br>
 
@@ -476,7 +476,7 @@ So now the number the user enters is assigned to `i` what are we going to do wit
 
 <br>
 
-This is what's called an `if else` statement, it does pretty much what it sounds like, it tries something and if that doesn't work it moves onto the next bit. In the example above it checks `if (i % 2 == 0)` which means if `i` is divisible with by 2 with no remainders, indicated by the `%` sign, then activate the section of code `Console.Write("Entered Number is an Even Number");` which writes `"Entered Number is an Even Number"` to the console. However, if `i` wasn't divisible by 2 with no remainders it would then activate the `else` section of the coad outputing to the console `"Entered Number is an Odd Number"`.
+This is whats called an `if else` statement, it does pretty much what it sounds like, it tries something and if that doesnt work it moves onto the next bit. In the example above it checks `if (i % 2 == 0)` which means if `i` is divisible with by 2 with no remainders, indicated by the `%` sign, then activate the section of code `Console.Write("Entered Number is an Even Number");` which writes `"Entered Number is an Even Number"` to the console. However, if `i` wasnt divisible by 2 with no remainders it would then activate the `else` section of the coad outputing to the console `"Entered Number is an Odd Number"`.
 
 <br>
 
@@ -604,8 +604,8 @@ namespace Game1
 
 
 <h3>Switch</h3>
-Statements – use them if you have a range of known inputs that require a particular output. Or you don’t want to write down a massive list of If else statements.
-Note - to get out of a Case we need to 'break' this allows the program to flow into the next section (after the switch)
+Statements – use them if you have a range of known inputs that require a particular output. Or you dont want to write down a massive list of If else statements.
+Note - to get out of a Case we need to 'break this allows the program to flow into the next section (after the switch)
 
 ```csharp
 int day = 4;
@@ -648,7 +648,7 @@ switch (day)
 <br>Build these programs:
 <br>Write pseudo code to design this program.
 Create 2 small program (using decisions) to achieve the following:
-<br>1- A user enters 3 numbers, create an efficient code that sorts and prints out the highest number entered. (use if statements not 'FindMaxax')
+<br>1- A user enters 3 numbers, create an efficient code that sorts and prints out the highest number entered. (use if statements not FindMaxax)
 If you feel like it - add in some error checking:
 if 2 numbers are the same and the highest then what to do? 
 If negative numbers are used but you wanted to check for positive numbers only?
@@ -658,17 +658,17 @@ think of other "errors" and what would you do about it?
 
 Since the introduction of the Gregorian calendar (in 1582), the following rule is used to determine the kind of year:
 
-if the year number isn't divisible by four, it's a common year;
-otherwise, if the year number isn't divisible by 100, it's a leap year;
-otherwise, if the year number isn't divisible by 400, it's a common year;
-otherwise, it's a leap year.
-Look at the code in the editor - it only reads a year number, and needs to be completed with the instructions implementing the test we've just described.
+if the year number isnt divisible by four, its a common year;
+otherwise, if the year number isnt divisible by 100, its a leap year;
+otherwise, if the year number isnt divisible by 400, its a common year;
+otherwise, its a leap year.
+Look at the code in the editor - it only reads a year number, and needs to be completed with the instructions implementing the test weve just described.
 
 The code should output one of two possible messages, which are Leap year or Common year, depending on the value entered.
 
 It would be good to verify if the entered year falls into the Gregorian era, and output a warning otherwise: Not within the Gregorian calendar period. Tip: use the != and % operators.
 
-Test your code using the data we've provided.
+Test your code using the data weve provided.
 
 Test Data
 Sample input: 2000
@@ -691,7 +691,7 @@ Sample input: 1580
 
 Expected output: Not within the Gregorian calendar period
 
-Compare your solution with other students' answers to see if there are better ways to produce your program
+Compare your solution with other students answers to see if there are better ways to produce your program
 <hr> <br>
 
 <h2 id="fourth-project">Loops</h2>
@@ -811,23 +811,23 @@ Create small programs:
 Write pseudo code to design these programs.
 <br>1-A junior magician has picked a secret number. He has hidden it in a variable named secret_number. 
 He wants everyone who run his program to play the Guess the secret number game, 
-and guess what number he has picked for them. Those who don't guess the number will be stuck in an endless loop forever! 
+and guess what number he has picked for them. Those who dont guess the number will be stuck in an endless loop forever! 
 Unfortunately, he does not know how to complete the code.
 
 Your task is to help the magician complete the code in the editor in such a way so that the code:
 <ul>
   <li>will ask the user to enter an integer number;</li>
   <li>will use a while loop;</li>
-  <li>will check whether the number entered by the user is the same as the number picked by the magician. If the number chosen by the user is different than the magician's secret number, the user should see the message "Ha ha! You're stuck in my loop!" and be prompted to enter a number again. If the number entered by the user matches the number picked by the magician, the number should be printed to the screen, and the magician should say the following words: "Well done, You are free now."</li>
+  <li>will check whether the number entered by the user is the same as the number picked by the magician. If the number chosen by the user is different than the magicians secret number, the user should see the message "Ha ha! You're stuck in my loop!" and be prompted to enter a number again. If the number entered by the user matches the number picked by the magician, the number should be printed to the screen, and the magician should say the following words: "Well done, You are free now."</li>
 </ul>
 
-The magician is counting on you! Don't disappoint him.
+The magician is counting on you! Dont disappoint him.
 
 <br>2- Develop a program using the for function that prints the word "Mississipi" each second for 10 seconds.
 you will need to investigate C# functions to find something that delays the output.
 expected output - 10 x Mississipi words printed on a new line, program takes 10 seconds to complete.
 
-Compare your solutions with other students' answers to see if there are better ways to produce your program
+Compare your solutions with other students answers to see if there are better ways to produce your program
 
 <hr> <br>
 
@@ -950,7 +950,7 @@ Your task is to:
   <li>write a line of code that prints the 2nd value of the existing list</li>
 </ul>
 Add any error checking required
-Compare your solution with other students' answers to see if there are better ways to produce your program
+Compare your solution with other students answers to see if there are better ways to produce your program
 <hr> <br>
 
 
@@ -1012,7 +1012,7 @@ Create a small program
 Write pseudo code to design this program.
 
 
-Compare your solution with other students' answers to see if there are better ways to produce your program
+Compare your solution with other students answers to see if there are better ways to produce your program
 <hr> <br>
 
 <h2 id="seventh-project">Methods</h2>
@@ -1036,7 +1036,7 @@ class class_name
 
 Where:
 <ul>
-  <li>Access_Specifier - It is used to define an access level either public or private, etc. to allow other classes to access the method. If we didn’t mention any access modifier, then by default it is private.</li>
+  <li>Access_Specifier - It is used to define an access level either public or private, etc. to allow other classes to access the method. If we didnt mention any access modifier, then by default it is private.</li>
   <li>Return_Type - It is used to specify the type of value the method can return. In case, if the method is not returning any value, then we need to mention void as return type.</li>
   <li>Method_Name - It must be a unique name to identify the method in a class. </li>
   <li>Parameters - The method parameters are useful to send or receive data from a method and these method parameters are enclosed within parentheses and are separated by commas. In case, if no parameters are required for a method then, we need to define a method with empty parentheses.</li>
@@ -1063,7 +1063,7 @@ class NumberManipulator {
 
 <ul>
   <li>Methods (or Functions) are a good way to start dividing your code up</li>
-  <li>Each method should have 1 function - i.e. add 2 numbers together - it will make your code easier to read, t'shoot and manage later on when your programs become a lot bigger</li>
+  <li>Each method should have 1 function - i.e. add 2 numbers together - it will make your code easier to read, troubleshoot and manage later on when your programs become a lot bigger</li>
 </ul>
 <h3>TASK - Project 6</H3>
 <hr> <br>
@@ -1074,7 +1074,7 @@ The user enters a number of squares they want.
 The program prints out a Square - so if the user enters '10' then a 10x10 box.
 To capture errors ensure the user can only enter positive integers between 1 to 30. 
 
-Compare your solution with other students' answers to see if there are better ways to produce your program
+Compare your solution with other students answers to see if there are better ways to produce your program
 <hr> <br>
 
 
